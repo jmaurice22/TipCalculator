@@ -26,9 +26,48 @@ h1 {
 }
 
 h4 {
-    margin: 4px;
-    padding-top: 3px;
-    padding-left: 3px;
-    padding-bottom: 4px;
+	display: flex;
+	justify-content: space-between;
 }
 
+.tip_percentage{
+    display: flex;
+    /* text-align: center; */
+    justify-self: start;
+    flex-direction: column;
+    
+}
+
+#percentage {
+    margin: 4px;
+    text-align: end;
+}
+
+
+#numppl {
+        display: flex;
+        align-items: center;
+        max-width: 40%;
+}
+
+
+button {
+	color: white;
+    background: green;
+}
+
+#total_bill {
+	display: flex;
+	justify-content: center;
+	color: green;
+    font-size: 30pt;
+    
+}
+
+#total_bill:after {
+	display: flex;
+	justify-content: center;
+	color: green;
+    font-size: 30pt;
+    
+}

@@ -8,32 +8,35 @@
     
 </head>
 <body>
-    <script src="app.js" ></script>
-
+    
     <div class="container">
         <!--Start of the calculator-->
         <div class="calculator">
     
-            <h1>Tip Calculator</h1>
-    
-            <div class="bill_amount">
-                <h4>Please enter your bill amount.</h4>
-                $ <input id`="bill" type="text" placeholder="Enter amount..">
-            </div>
-    
-            <div class="tip_percentage">
-                <!-- TO DO: PROMPT USER TO ENTER A PERCENTAGE TO TIP-->
-                <h4>Please enter a percentage to tip.</h4>
-                <input id`="tip%" type="number" placeholder="Enter amount.."> %
-    
-            </div>
-    
-            <div class="total_bill">
-    
-            </div>
+            <form>
+                <h1>Tip Calculator</h1>
+                    <h4>Please enter your bill amount.</h4>
+                    $ <input id="bill" type="text" placeholder="Bill Amount">
+               
+        
+                <div class="tip_percentage">
+                    <h4>Please enter a percentage to tip.</h4>
+                    <span><input id="percentage" type="text" placeholder="Ex. .20">%</span> 
+                    <input id="numppl" type="text" placeholder="Enter number of people">
+                </div>
+                
+                <button type="button" id="calculate">Calculate</button>
+                
+            </form>
+                <div id="total_bill">
+                   <sup>$</sup> <span id="tip"></span>
+                </div>
+            
+            
 
     </div>
 
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
